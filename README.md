@@ -1,4 +1,4 @@
-# Igloolab Test Frontend
+# Igloobal Test Frontend
 
 Este repositorio contiene el **frontend** de la aplicación de gestión de productos farmacéuticos, desarrollada con **React**, **TypeScript** y **CSS puro** para los estilos. La interfaz ofrece:
 
@@ -24,8 +24,8 @@ npm se instala automáticamente junto a Node.js.
 1.  **Clonar este repositorio o descargar el contenido en formato ZIP:**
 
 ```bash
-git clone https://github.com/SnedierFuentes/igloolab-test-frontend.git
-cd igloolab-test-frontend
+git clone https://github.com/SnedierFuentes/igloobal-test-frontend.git
+cd igloobal-test-frontend
 ```
 
 2.  **Instalar las dependencias:**
