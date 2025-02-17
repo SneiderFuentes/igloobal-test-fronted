@@ -2,10 +2,11 @@
 
 Este repositorio contiene el **frontend** de la aplicación de gestión de productos farmacéuticos, desarrollada con **React**, **TypeScript** y **CSS puro** para los estilos. La interfaz ofrece:
 
-- **Tabla de productos** con posibilidad de eliminar cada fila mediante un ícono de papelera.  
-- **Modal** de confirmación para eliminación de productos.  
-- **Toast** de notificaciones para retroalimentación tras crear o eliminar.  
+- **Tabla de productos** con posibilidad de eliminar cada fila mediante un ícono de papelera.
+- **Modal** de confirmación para eliminación de productos.
+- **Toast** de notificaciones para retroalimentación tras crear o eliminar.
 - **Modal** para agregar un nuevo producto (formulario con campos de nombre, descripción y precio).
+  
 
 ## Requisitos previos
 
@@ -79,12 +80,18 @@ src
 ```
 
 ## Descripción breve
-**components:** Contiene componentes reutilizables (modales, tablas, toasts).
-**interface:** Almacena tipos (interfaces) de TypeScript.
-**screen:** Pantallas o vistas principales (en este caso, la vista de la lista de productos).
-**service:** Define la lógica de consumo de la API (archivo api.ts).
-**store:** Manejo de estado global con Redux Toolkit (slices y thunks para acciones asíncronas).
-**styles:** Archivos CSS puros para estilizar modales, tablas y elementos de la interfaz.
+   **components:** Contiene componentes reutilizables (modales, tablas, toasts).
+   
+   **interface:** Almacena tipos (interfaces) de TypeScript.
+   
+   **screen:** Pantallas o vistas principales (en este caso, la vista de la lista de productos).
+   
+   **service:** Define la lógica de consumo de la API (archivo api.ts).
+   
+   **store:** Manejo de estado global con Redux Toolkit (slices y thunks para acciones asíncronas).
+   
+   **styles:** Archivos CSS puros para estilizar modales, tablas y elementos de la interfaz.
+
 
 ## Ejecución en modo desarrollo
 Para levantar la aplicación en modo desarrollo:
