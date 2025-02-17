@@ -1,0 +1,152 @@
+
+.modal-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); 
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+    transition: opacity 0.3s ease;
+  }
+
+  .modal-overlay.show {
+    display: flex;
+    opacity: 1;
+  }
+  
+
+  .modal-container form input {
+    width: 100%; 
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    box-sizing: border-box; 
+  }
+  
+  
+ 
+  @keyframes fadeIn {
+    from {
+      transform: scale(0.9);
+      opacity: 0;
+    }
+    to {
+      transform: scale(1);
+      opacity: 1;
+    }
+  }
+  
+
+  .modal-close {
+    position: absolute;
+    right: 15px;
+    top: 10px;
+    font-size: 20px;
+    cursor: pointer;
+    color: #333;
+    font-weight: bold;
+    transition: color 0.3s;
+  }
+  
+  .modal-close:hover {
+    color: red;
+  }
+  
+  .modal-container {
+    background: white;
+    padding: 20px;
+    width: 90%;
+    max-width: 450px;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);    
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);  
+    opacity: 0;  
+    visibility: hidden;  
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+
+.modal-overlay.show .modal-container {
+    opacity: 1;
+    visibility: visible;
+}
+.modal-container form {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 10px;
+  width: 100%;
+}
+
+  label {
+    font-weight: bold;
+    text-align: left;
+  }
+  
+  
+  input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  
+  
+  .modal-buttons {
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+ 
+  .cancel {
+    background-color: #ff4d4d;
+    color: white;
+    transition: 0.3s;
+  }
+  
+  .cancel:hover {
+    background-color: #cc0000;
+  }
+  
+ 
+  .save {
+    background-color: #4CAF50;
+    color: white;
+    transition: 0.3s;
+  }
+  
+  .save:hover {
+    background-color: #388E3C;
+  }
+  
+    .modal-title {
+        width: 100%;
+        text-align: center;
+        background: linear-gradient(45deg, #8E0E76 0%, #381A73 25%, #1E2E71 50%, #0F4374 75%, #08717A 100%);
+        color: white;
+        font-weight: bold;
+        font-size: 18px;
+        padding: 12px;
+        border-radius: 8px 8px 0 0; 
+    }
+
+

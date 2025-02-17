@@ -1,0 +1,66 @@
+.table-container {
+    width: 100%;
+    overflow-x: auto; /* Permite desplazamiento horizontal si es necesario */
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.product-table {
+    width: 90%;
+    max-width: 1200px;
+    border-collapse: collapse;
+    font-size: 16px;
+}
+
+.product-table th {
+    background-color: #f4f4f4; 
+    padding: 12px;
+    text-align: left;
+    border: 1px solid #ccc; 
+    font-weight: bold;
+}
+
+.product-table td {
+    padding: 12px;
+    border: 1px solid #ccc; 
+    text-align: left;
+}
+
+/* Mantener los iconos dentro de la tabla */
+.action-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    align-items: center;
+}
+
+.edit-button, .delete-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.edit-button {
+    color: #009688;
+}
+
+.delete-button {
+    color: #e74c3c;
+}
+
+.edit-button:hover {
+    color: #00796b;
+}
+
+.delete-button:hover {
+    color: #c0392b;
+}
+
+/* Ajustar el contenedor principal para evitar desbordes */
+.product-list-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

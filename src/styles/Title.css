@@ -1,0 +1,22 @@
+/* Contenedor del título con fondo degradado */
+.title-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(45deg, #8E0E76 0%, #381A73 25%, #1E2E71 50%, #0F4374 75%, #08717A 100%);
+    color: white;
+    height: 40px;
+    border-radius: 10px;
+    font-weight: bold;
+    margin: 20px auto;
+    padding: 10px;
+    text-align: center;
+    box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Estilo del texto */
+  .title-container h2 {
+    font-size: inherit;
+    margin: 0;
+  }
+  
