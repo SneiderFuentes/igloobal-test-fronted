@@ -13,7 +13,7 @@ const ProductList = () => {
   const { products } = useSelector((state: RootState) => state.products);
   const [openAddModal, setOpenAddModal] = useState(false);
   const [selectedProduct, setSelectedProduct] = useState<Product | null>(null);
-
+  const [isOrdered, setIsOrdered] = useState(false);
   useEffect(() => {
     dispatch(getProductsThunk());
   }, [dispatch]);
@@ -31,6 +31,15 @@ const ProductList = () => {
     setSelectedProduct(null);
     setOpenAddModal(true);
   };
+  const orderProducts = () => {
+    setIsOrdered(true);
+  };
+
+  const productsToShow = isOrdered
+  ? [...products].sort((a, b) =>
+      a.name.localeCompare(b.name)
+    )
+  : products;
 
   return (
     <div className="product-list-container">
@@ -41,8 +50,13 @@ const ProductList = () => {
           Agregar Producto
         </button>
       </div>
+      <div className="button-container">
+        <button className="add-button" onClick={orderProducts}>
+          Ordenar
+        </button>
+      </div>
 
-      <ProductTable products={products} onDelete={handleDelete} />
+      <ProductTable products={productsToShow} onDelete={handleDelete} />
 
       <AddProductModal open={openAddModal} handleClose={() => setOpenAddModal(false)} product={selectedProduct} />
     </div>
